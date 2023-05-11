@@ -1,6 +1,8 @@
+using MarketPlace.Domain.Common;
+
 namespace MarketPlace.Domain;
 
-public class Product
+public class Product : AuditableEntity
 {
     public int Id { get; set; }
     public string Name { get; set; }
