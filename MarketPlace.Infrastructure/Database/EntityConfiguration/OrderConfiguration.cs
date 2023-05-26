@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace MarketPlace.Infrastructure.Database.EntityConfiguration;
 
-public class PaymentConfiguration:IEntityTypeConfiguration<Payment>
+public class OrderConfiguration:IEntityTypeConfiguration<Order>
 {
-    public void Configure(EntityTypeBuilder<Payment> builder)
+    public void Configure(EntityTypeBuilder<Order> builder)
     {
         builder.HasKey(x => x.Id);
-        builder.Property(x => x.Id).ValueGeneratedOnAddOrUpdate();
+        builder.Property(x => x.Id).UseIdentityColumn();
     }
 }

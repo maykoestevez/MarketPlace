@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using MarketPlace.Domain.Common;
 using MarketPlace.Infrastructure.Database;
 using MarketPlace.Infrastructure.Interfaces.Repository;
@@ -6,7 +7,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace MarketPlace.Infrastructure.Repository;
 
-public class GenericRepository<T> : IGenericRepository<T> where T : class
+public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
 {
     private readonly MarketPlaceDbContext _dbContext;
     private readonly DbSet<T> _dbSet;
@@ -17,28 +18,34 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         _dbSet = _dbContext.Set<T>();
     }
 
-    public async Task<IEnumerable<T>> GetAll()
+    public virtual async Task<IEnumerable<T>> GetAsync(Expression<Func<T, bool>> filter = null)
     {
-        return await _dbSet.ToListAsync();
+        if (filter != null)
+        {
+            return await _dbSet.Where(filter).AsNoTracking().ToListAsync();
+        }
+
+        return await _dbSet.AsNoTracking().ToListAsync();
     }
 
-    public async Task<T> GetById(object id)
+    public virtual async Task<T> GetByIdAsync(object id)
     {
         return await _dbSet.FindAsync(id);
     }
 
-    public async Task Insert(T entity)
+    public virtual async Task<T> InsertAsync(T entity)
     {
-        await _dbSet.AddAsync(entity);
+        return (await _dbSet.AddAsync(entity)).Entity;
     }
 
-    public async Task Update(T entity)
+    public virtual async Task<T> UpdateAsync(T entity)
     {
-        await Task.FromResult(_dbSet.Attach(entity));
-        _dbContext.Entry(entity);
+        _dbSet.Attach(entity);
+        _dbContext.Entry(entity).State = EntityState.Modified;
+        return await Task.FromResult(entity);
     }
-
-    public async Task Delete(object id)
+    
+    public virtual async Task DeleteAsync(object id)
     {
         var entity = await _dbSet.FindAsync(id);
         if (_dbContext.Entry(entity).State == EntityState.Detached)
@@ -48,7 +55,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
 
         _dbSet.Remove(entity);
     }
-    
+
     private void SetTrackingProperties()
     {
         foreach (var entry in _dbContext.ChangeTracker.Entries<AuditableEntity>())
@@ -65,7 +72,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         }
     }
 
-    public async Task Save()
+    public async Task SaveAsync()
     {
         SetTrackingProperties();
         await _dbContext.SaveChangesAsync();

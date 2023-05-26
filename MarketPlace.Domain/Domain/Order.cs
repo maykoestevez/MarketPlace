@@ -2,12 +2,12 @@
 
 namespace MarketPlace.Domain;
 
-public class Payment : AuditableEntity
+public class Order : AuditableEntity
 {
     public int Id { get; set; }
     public PaymentMethodType PaymentMethod { get; set; }
     public double Amount { get; set; }
-    public IEnumerable<Product> Products { get; set; }
+    public bool IsPaid { get; set; }
 }
 
 public enum PaymentMethodType

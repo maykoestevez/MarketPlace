@@ -12,7 +12,7 @@ public class MarketPlaceDbContext : DbContext
     }
 
     public DbSet<Product> Products { get; set; }
-    public DbSet<Payment> Payments { get; set; }
+    public DbSet<Order> Orders { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
