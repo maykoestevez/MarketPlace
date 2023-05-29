@@ -5,40 +5,18 @@
     <projectFile profileName="https">MarketPlace/MarketPlace.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f304216-8384-4136-b034-1754c1400fb4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Common/Mappings/IMapFrom.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Common/Mappings/MappingProfile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Common/Validations/ValidationBehavior.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/DependencyInjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Products/CreateProductCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Products/DeleteProductCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Products/GetProductsQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Products/ProductDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Products/ProductHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Products/UpdateProductCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Application/Products/Validations/ProductValidations.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure.Interfaces/Repository/IOrderRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure.Interfaces/Repository/IProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure/DependencyInjection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure/Repository/OrderRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure/Repository/ProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
+    <list default="true" id="8f304216-8384-4136-b034-1754c1400fb4" name="Changes" comment="Adding CRUD in controllers and mediator">
+      <change afterPath="$PROJECT_DIR$/MarketPlace.api/MarketPlace.Infrastructure/Database/20230522030554_Initial.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketPlace.api/MarketPlace.Infrastructure/Database/20230522030554_Initial.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketPlace.api/MarketPlace.Infrastructure/Database/20230523103842_AddingSeedData.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MarketPlace.api/MarketPlace.Infrastructure/Database/20230523103842_AddingSeedData.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MarketPlace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MarketPlace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Application/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketPlace.Application.Interfaces/MarketPlace.Application.Interfaces.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Application.Interfaces/MarketPlace.Application.Interfaces.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MarketPlace.Application/MarketPlace.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Application/MarketPlace.Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Domain/Domain/Payment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Domain/Domain/Order.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketPlace.Domain/MarketPlace.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Domain/MarketPlace.Domain.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MarketPlace.Infrastructure.Interfaces/MarketPlace.Infrastructure.Interfaces.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure.Interfaces/MarketPlace.Infrastructure.Interfaces.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Infrastructure.Interfaces/Repository/IGenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure.Interfaces/Repository/IGenericRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Infrastructure/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Infrastructure/Database/EntityConfiguration/PaymentConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure/Database/EntityConfiguration/OrderConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Infrastructure/Database/EntityConfiguration/ProductConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure/Database/EntityConfiguration/ProductConfiguration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Infrastructure/Database/MarketPlaceDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure/Database/MarketPlaceDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Infrastructure/MarketPlace.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure/MarketPlace.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.Infrastructure/Repository/GenericRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.Infrastructure/Repository/GenericRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.api/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.api/Controllers/ProductController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.api/MarketPlace.api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.api/MarketPlace.api.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.api/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MarketPlace.api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MarketPlace.api/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MarketPlace.api/Controllers/ProductController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +30,8 @@
     <setting file="file://$PROJECT_DIR$/MarketPlace.Application.Interfaces/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MarketPlace.Application/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MarketPlace.Infrastructure.Interfaces/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/maykoestevez/Code/MarketPlace/MarketPlace.Infrastructure/Repository/GenericRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MarketPlace.Infrastructure/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/MarketPlace.Tests/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/maykoestevez/Code/MarketPlace/MarketPlace.api/Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/maykoestevez/Code/MarketPlace/MarketPlace.api/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/72d4c2a2a11f35e7651506d18dce6d5f2fcf2eb8a57ac4bba5b9ca8178b02a/ValidationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e5b9c140912e8295f69159adbf39ad664d070868f2c2ae42d7e7dd1d92a9d4/ServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -75,28 +50,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT",
-      "GitIgnore"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;,
+      &quot;GitIgnore&quot;
     ],
-    "rider.external.source.directories": [
-      "/Users/maykoestevez/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/Users/maykoestevez/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/Users/maykoestevez/.local/share/Symbols/src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/maykoestevez/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/maykoestevez/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/maykoestevez/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.MarketPlace: http">
+}</component>
+  <component name="RunManager" selected="Docker.Dockerfile build">
     <configuration name="MarketPlace: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MarketPlace.api/MarketPlace.api.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
@@ -127,6 +102,55 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="Dockerfile build" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="mcr.microsoft.comdotnetsdk7.0_build" />
+          <option name="buildCliOptions" value="--target build" />
+          <option name="buildKitEnabled" value="true" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isPublishEnabled="true" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.MarketPlace: http" />
+      <item itemvalue=".NET Launch Settings Profile.MarketPlace: https" />
+      <item itemvalue="Docker.Dockerfile build" />
+      <item itemvalue="Docker.Dockerfile" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile build" />
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -139,7 +163,10 @@
       <workItem from="1683631242430" duration="2157000" />
       <workItem from="1683680394334" duration="2346000" />
       <workItem from="1683720879513" duration="8738000" />
-      <workItem from="1683847917470" duration="41178000" />
+      <workItem from="1683847917470" duration="44437000" />
+      <workItem from="1685192886961" duration="8720000" />
+      <workItem from="1685276677979" duration="2686000" />
+      <workItem from="1685320835174" duration="355000" />
     </task>
     <task id="LOCAL-00001" summary="Adding initial folder structure">
       <created>1683633250017</created>
@@ -176,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683807584312</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding CRUD in controllers and mediator">
+      <created>1685066545816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685066545816</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +236,7 @@
     <MESSAGE value="Adding read me" />
     <MESSAGE value="remove ignored files" />
     <MESSAGE value="Adding repositories implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding repositories implementation" />
+    <MESSAGE value="Adding CRUD in controllers and mediator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding CRUD in controllers and mediator" />
   </component>
 </project>
